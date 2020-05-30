@@ -17,6 +17,7 @@ services:
   # Selenium hub
   selenium_hub-mobile-apk:
     image: selenium/hub:3.14.0-curium
+    privileged: true
     ports:
       - 4444:4444
 
@@ -54,7 +55,7 @@ services:
       - 6080:6080
     # Change path of apk that you want to test. I use sample_apk that I provide in folder "example"
     volumes:
-      - ${apkDirectory}:/root/tmp/sample_apk
+      - ${apkDirectory}:/home/anddre/eclipse-workspace/Crowdar Academy/Lippia-mobile-sample-project/sample_apk
       - ./video-samsung_s7_9:/tmp/video
     environment:
       - DEVICE=Samsung Galaxy S7

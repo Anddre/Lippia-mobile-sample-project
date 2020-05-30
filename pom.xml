@@ -37,8 +37,8 @@
             <properties>
                 <crowdar.gridhub>http://127.0.0.1:4723/wd/hub</crowdar.gridhub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd></crowdar.avd>
-                <crowdar.appLocation>C:\\\\workspace\\\\crowdar\\\\Lippia-mobile-sample-project\\\\sample_apk\\\\ApiDemos.apk</crowdar.appLocation>
+                <crowdar.avd>Samsung7</crowdar.avd>
+                <crowdar.appLocation>/home/anddre/eclipse-workspace/Crowdar Academy/Lippia-mobile-sample-project/sample_apk/lippia.apk</crowdar.appLocation>
                 <crowdar.deviceName>Redmi Note 8 Pro</crowdar.deviceName>
             </properties>
         </profile>
@@ -58,7 +58,7 @@
                 <crowdar.extent.host.name>Stack</crowdar.extent.host.name>
                 <crowdar.gridhub>http://localhost:4444/wd/hub</crowdar.gridhub>
                 <crowdar.avd>samsung_galaxy_s7_9.0</crowdar.avd>
-                <crowdar.appLocation>/root/tmp</crowdar.appLocation>
+                <crowdar.appLocation>/home/anddre/eclipse-workspace/Crowdar Academy/Lippia-mobile-sample-project/sample_apk/lippia.apk</crowdar.appLocation>
                 <crowdar.deviceName>Android Emulator</crowdar.deviceName>
             </properties>
         </profile>
@@ -90,7 +90,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.1</version>
+                <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>${cucumber.runner}</suiteXmlFile>
