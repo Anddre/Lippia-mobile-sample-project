@@ -17,3 +17,13 @@ Feature: As a potential client i want to interact with the mobile application
     Examples:
       | username   | email                | password |
       | automation | automation@gmail.com | 123456   |
+
+    @Test
+    Scenario Outline:The user logs in the application
+      Given The app is loaded correctly
+      When The user logs in the application with: <email>, <password>
+      Then Home page is displayed
+
+    Examples:
+      | email                | password |
+      | automation@gmail.com | 123456   |

@@ -37,6 +37,6 @@ public class HomePage extends PageBaseMobile {
     }
 
     public boolean isHomePageVisible() {
-        return isElementVisible(MobileBy.AccessibilityId(CHANGE_LANGUAGE_BUTTON_ACCESSIBILITY_ID));
+        return isElementVisible(MobileBy.AccessibilityId(SIGN_OUT_BUTTON_ACCESSIBILITY_ID));
     }
 }
